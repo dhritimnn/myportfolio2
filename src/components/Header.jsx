@@ -1,7 +1,7 @@
 function Header(prop) {
     return (
         <div className="Header">
-            <img src="../img/profile.jpg" />
+            <img src="./public/img/profile.jpg" />
             <div>
                 <h2>Dhritman Kashyap</h2>
                 <span>Student At ARBA</span>
