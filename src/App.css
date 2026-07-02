@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/outfit/static/Outfit-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+.Navbar {
+    background: rgb(22, 56, 119);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.Navbar>.Nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.Navbar>.Nav-links>* {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 100ms ease-in;
+}
+
+.Navbar>.Nav-links>*:hover{
+    color: rgb(178, 162, 207);
+}
+
+
+.Navbar>.Nav-listbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: #ffffff40;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+}
+
+
+
+.Header {
+    height: 90dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #310d5a;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.Header > img {
+    width: 24rem;
+}
+
+.Header > div {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 28rem;
+    
+}
+
+.Header > div > h2{
+    font-size: 2.5rem;
+}
