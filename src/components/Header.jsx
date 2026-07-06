@@ -1,3 +1,4 @@
+import "./Header.css";  
 function Header(prop) {
     return (
         <div className="Header">

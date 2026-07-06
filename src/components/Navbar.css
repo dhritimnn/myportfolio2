@@ -1,0 +1,57 @@
+.Navbar {
+  background: rgb(22, 56, 119);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+  position: fixed;
+  inset: 0 0 auto 0;
+  width: 60%;
+  border-radius: 200px;
+}
+.Navbar > h2 {
+  padding: 1rem 2rem;
+}
+.Navbar > .Nav-links {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.Navbar > .Nav-links > * {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 100ms ease-in;
+}
+
+.Navbar > .Nav-links > *:hover {
+  color: rgb(178, 162, 207);
+}
+
+.Navbar > .Nav-listbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0.9rem;
+  background: #ffffff40;
+  border: none;
+  outline: none;
+  border-radius: 20rem;
+  margin: 0.4rem 0.6rem;
+}
+
+.Navbar > .Nav-listbtn:hover {
+  background: #ffffff70;
+}
+
+/* Applies only when the viewport width is 768px or wider */
+@media screen and (max-width: 838px) {
+  .Navbar > .Nav-links {
+    display: none;
+  }
+  .Navbar {
+    width: 90%;
+  }
+}

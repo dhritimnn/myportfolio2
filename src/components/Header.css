@@ -1,0 +1,40 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #310d5a;
+  gap: 4rem;
+  padding: 2rem; 
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+.Header > img {
+  width: 24rem;
+  border-radius: 20px;
+}
+
+.Header > div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  max-width: 28rem;
+}
+
+.Header > div > h2 {
+  font-size: 2.5rem;
+}
+
+.Footer {
+  display: grid;
+  grid-template-rows: repeat();
+  background: #310d5a;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 838px) {
+  .Header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
