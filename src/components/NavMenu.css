@@ -1,0 +1,36 @@
+.NavMenu {
+  position: fixed;
+  background: #1f082ed7;
+  backdrop-filter: blur(2rem);
+  inset: 0 0;
+  width: 70%;
+  height: 70%;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 1rem;
+  margin: auto;
+  border-radius: 1rem;
+  animation: abc .2s ease-in ;
+}
+
+.NavMenu > div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.NavMenu > div > h2 {
+  padding-bottom: 1rem;
+}
+
+@keyframes abc {
+  from {
+    opacity: 0;
+}
+  to {
+    opacity: 100%;
+  }
+}
