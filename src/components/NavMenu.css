@@ -1,5 +1,10 @@
 .NavMenu {
   position: fixed;
+  inset: 0;
+  width: 77%;
+  height: 70%;
+  margin: auto;
+  padding: 2rem;
   background: #1f082ed7;
   backdrop-filter: blur(2rem);
   inset: 0 0;
@@ -8,7 +13,6 @@
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 2rem;
   gap: 1rem;
   margin: auto;
   border-radius: 1rem;
@@ -22,6 +26,13 @@
   width: 100%;
 }
 
+.NavMenu > div > * {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  
+}
 .NavMenu > div > h2 {
   padding-bottom: 1rem;
 }
@@ -29,7 +40,7 @@
 @keyframes abc {
   from {
     opacity: 0;
-}
+  }
   to {
     opacity: 100%;
   }
