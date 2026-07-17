@@ -16,8 +16,8 @@ const Navbar = () => {
           xmlns="http://w3.org"
           viewBox="0 0 200 200"
           stroke="#000000"
-          stroke-width="24"
-          stroke-linecap="round"
+          strokeWidth="24"
+          strokeLinecap="round"
           width="25"
           height="19"
         >
