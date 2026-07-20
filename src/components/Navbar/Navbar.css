@@ -5,17 +5,18 @@ nav {
   background: rgba(158, 154, 154, 0.413);
   backdrop-filter: blur(10px);
   position: sticky;
-  inset: auto 0;
+  inset: 0;
   top: 0;
-  width: 70%;
-  margin: 10px auto;
+  width: 58%;
+  margin: 2.5rem auto 3.5rem auto;
   border-radius: 15px;
-  padding: 10px 20px;
+  padding: 16px 20px;
 }
 
 nav h2 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin-left: 0.8rem;
 }
 
 nav > div {

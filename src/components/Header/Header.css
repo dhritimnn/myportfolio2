@@ -1,40 +1,55 @@
 header {
-  width: 100%;
-  padding: 4rem 0;
-  display: flex;
-  justify-content: center;
+  width: 60.5%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2%;
 }
 
 header > img {
-  width: 40%;
+  width: 100%;
   height: min-content;
+  border-radius: 1rem;
 }
 
 header > section {
-  padding: 0 2rem;
-  height: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  flex-direction: column;
+  padding-right: 15%;
+  padding-top: 4rem;
 }
 
 header > section > h2 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary-color);
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 header > section > span {
   color: #c17f7f;
 }
 
+header > section > p {
+  text-align: justify;
+  margin-top: 5rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+@media (max-width: 1157px) {
+  header > section {
+    padding-top: 2rem;
+  }
+  header > section > p {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 750px) {
   header {
-    flex-direction: column;
+    width: 80%;
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 0.5rem 0;
   }
