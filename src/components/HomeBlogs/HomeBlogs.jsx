@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomeBlogs.css";
 
 const HomeBlogs = () => {
@@ -28,6 +29,7 @@ const HomeBlogs = () => {
           </div>
         </div>
       </div>
+      <Link to="/">View More</Link>
     </div>
   );
 };

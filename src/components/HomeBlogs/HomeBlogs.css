@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 10%;
+  padding: 1rem 0;
   margin: 0 auto;
   margin-top: 3rem;
   width: 58%;
@@ -20,7 +20,7 @@
 }
 
 .home-blogs > .title > hr {
-  width: 70%;
+  width: 60%;
 }
 
 .home-blogs > .title > h2 {
@@ -29,14 +29,23 @@
 }
 
 .home-blogs > .container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem 8%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 1rem;
+}
+@media (min-width: 1204px) {
+  .home-blogs > .container {
+    gap: 1.5px 6rem;
+  }
 }
 
 .home-blogs > .container > .item {
+  justify-self: center;
+  width: max-content;
   display: flex;
   flex-direction: column;
   background: #bbadad42;
@@ -45,7 +54,6 @@
 
 .home-blogs > .container > .item > img {
   width: 100%;
-  height: min-content;
   border-radius: 1rem;
 }
 
@@ -55,6 +63,12 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+}
+.home-blogs > a {
+  margin: 2rem auto;
+}
+.home-blogs > a:hover {
+  color: grey;
 }
 
 @media (max-width: 750px) {
@@ -76,10 +90,11 @@
 @media (max-width: 834px) {
   .home-blogs > .container {
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    width: 98%;
   }
   .home-blogs > .container > .item {
     flex-direction: row;
+    width: 100%;
   }
 
   .home-blogs > .container > .item > img {
