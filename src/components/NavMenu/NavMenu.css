@@ -1,15 +1,19 @@
 .nav-menu {
+  display: grid;
   position: fixed;
-  inset: 5.25rem 0 auto 0;
+  inset: 7.9rem 0 auto 0;
   background: rgb(26, 16, 48, 0.8);
   backdrop-filter: blur(10px);
-  width: 79%;
+  width: 57.8%;
   margin: 0 auto;
   border-radius: 1rem;
-  /* display: grid; */
-  display: none;
+  /* display: none; */
   grid-template-columns: repeat(2, 1fr);
   padding: 1.5rem 1.5rem;
+}
+
+.nav-menu.visible {
+  display: none;
 }
 
 .nav-menu > div {
@@ -17,7 +21,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 0 0.3rem;
+  padding: 0 0.8rem;
 }
 
 .nav-menu > div > a {
@@ -27,12 +31,35 @@
   font-weight: 600;
   text-align: center;
   background: #ffffff36;
-  padding: 4px 3px;
-  border-radius: 5px;
+  padding: 9px 3px;
+  border-radius: 0.8rem;
 }
 
 .nav-menu-long {
   margin-top: 1rem;
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.nav-menu-long > a {
+  background: #4c13ae74;
+}
+
+@media (max-width: 824px) {
+  .nav-menu {
+    width: 86%;
+    padding: 0.9rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    inset: 6.4rem 0 auto 0;
+    gap: 0.5rem;
+  }
+  .nav-menu.visible {
+    display: none;
+  }
+  .nav-menu-long {
+    margin-top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }

@@ -2,9 +2,9 @@ import React from "react";
 import "./NavMenu.css";
 import { Link } from "react-router-dom";
 
-const NavMenu = () => {
+const NavMenu = (props) => {
   return (
-    <div className="nav-menu">
+    <div className={`nav-menu ${props.visibility}`}>
       <div>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
